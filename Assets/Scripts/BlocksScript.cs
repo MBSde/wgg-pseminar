@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class BlocksScript : MonoBehaviour
 {
-    public float speed; // The desired speed of the object
+    [SerializeField] private float speed; // The desired speed of the object
 
-    public float minY = -25f;
+    [SerializeField] private float minY = -25f;
 
-    public ParticleEffect particleEffect;
+    [SerializeField] private ParticleEffect particleEffect;
 
     private Rigidbody2D rb;
     [SerializeField] private string key;
     private float spposition;
     private bool clicked = false;
+    private bool comboReset = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,10 +60,11 @@ public class BlocksScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < -4.5f&&!clicked)
+        if (transform.position.y < -4.5f&&!clicked&&!comboReset)
         {
             GameManager.Instance.ResetCombo();
-            Destroy(gameObject);
+            comboReset = true;
+            
         }
         if (transform.position.y < minY)
         {

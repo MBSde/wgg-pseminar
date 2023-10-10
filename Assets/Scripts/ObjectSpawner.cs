@@ -30,7 +30,7 @@ public class ObjectSpawner : MonoBehaviour
     private void SpawnRandomObject()
     {
         float length = 1;
-        int randomNum = Random.Range(1, 5);
+        int randomNum = Random.Range(1, 9);
         if (randomNum > 4)
         {
             length =2*(GameManager.Instance.getSpeed()*beatInterval+1);
@@ -118,5 +118,6 @@ public class ObjectSpawner : MonoBehaviour
         beat++;
         SpawnRandomObject();
         audioSource.Play();
+        GameManager.Instance.IncreaseScore(GameManager.Instance.getPointsIncreasedByBeat());
     }
 }

@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class LongBlockScript : MonoBehaviour
 {
-    public float speed; // The desired speed of the object
+    [SerializeField] private float speed; // The desired speed of the object
 
-    public float minY = -25f;
+    [SerializeField] private float minY = -25f;
 
-    public ParticleEffect particleEffect;
-    public GameObject square;
-    public GameObject secCircle;
-    public GameObject secSquare;
+    [SerializeField] private ParticleEffect particleEffect;
+    [SerializeField] private GameObject square;
+    [SerializeField] private GameObject secCircle;
+
 
     private Rigidbody2D rb;
     [SerializeField] private string key;
     private float spposition;
     [SerializeField] private float length;
     private bool started = false;
+    private bool stopped = false;
+    private bool comboReset = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,12 +36,10 @@ public class LongBlockScript : MonoBehaviour
         rb.velocity = velocity;
         Transform squareTransform = square.transform;
         Transform secCircleTransform = secCircle.transform;
-        Transform secSquareTransform = secSquare.transform;
         squareTransform.localScale = new Vector3(1f, 1f, 1f);
         GameObject attachedGameObject = gameObject;
         secCircle.transform.localPosition = new Vector3(0, length, 0);
         square.transform.localScale = new Vector3(1f, length, 1f);
-        secSquare.transform.localScale = new Vector3(1f, 0, 1f);
 
 
         switch (attachedGameObject.name)
@@ -70,11 +70,12 @@ public class LongBlockScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.y< -4.5f-length && !started)
+        if(transform.position.y< -4.5f-length && !started && !comboReset)
         {
-            //GameManager.Instance.ResetCombo();
+            GameManager.Instance.ResetCombo();
+            comboReset = true;
         }
-        if (transform.position.y < minY)
+        if (transform.position.y < minY-length)
         {
             
             Destroy(gameObject);
@@ -83,6 +84,15 @@ public class LongBlockScript : MonoBehaviour
         {
 
             CheckAndDeleteObject();
+
+        }
+        if (Input.GetButtonUp(key)&&started&&!stopped)
+        {
+            GameManager.Instance.increasePointsIncreasedByBeat(-1);
+            stopped = true;
+            Renderer circleRenderer = secCircle.GetComponent<Renderer>();
+            Material circleMaterial = circleRenderer.material;
+            circleMaterial.color = circleMaterial.color * 0.8f;
 
         }
         if (Input.GetButton(key)&& started)
@@ -139,13 +149,18 @@ public class LongBlockScript : MonoBehaviour
                 particleEffect.PlayParticleEffect(1, spposition);
             }
             GameManager.Instance.IncreaseCombo(1);
+            GameManager.Instance.increasePointsIncreasedByBeat(1);
             Renderer renderer = GetComponent<Renderer>();
             Material material = renderer.material;
+            
 
             Color originalColor = material.color;
             Color darkerColor = originalColor * 0.8f; // Reduce brightness by multiplying with a factor
 
             material.color = darkerColor;
+            Renderer squareRenderer = square.GetComponent<Renderer>();
+            Material squareMaterial = squareRenderer.material;
+            squareMaterial.color = squareMaterial.color *0.8f;
             started = true;
             
             
@@ -156,6 +171,7 @@ public class LongBlockScript : MonoBehaviour
         length = newLength;
         square.transform.localScale = new Vector3(1f, length, 1f);
         square.transform.localPosition = new Vector3(0, length/2, 0);
+        
         Debug.Log(length.ToString() + square.transform.localScale.y.ToString());
 
     }

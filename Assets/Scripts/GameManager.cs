@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float BPM;
     [SerializeField] private int highscore;
+    private int pointsIncreasedByBeat = 0;
     // Getter for the singleton instance
     public static GameManager Instance
     {
@@ -81,5 +82,15 @@ public class GameManager : MonoBehaviour
     public float getSpeed()
     {
         return speed;
+    }
+    
+    public void increasePointsIncreasedByBeat(int increase)
+    {
+        pointsIncreasedByBeat = pointsIncreasedByBeat + increase;
+    }
+
+    public int getPointsIncreasedByBeat()
+    {
+        return pointsIncreasedByBeat;
     }
 }
