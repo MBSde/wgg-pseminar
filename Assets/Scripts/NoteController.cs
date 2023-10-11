@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class NoteController : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    private float speed;
+    public int column;
+    public bool resetCombo = false;
+    private GameManagerNew gameManager;
 
-    public void Initialize(float speed)
+    public void Initialize(float speed, int column)
     {
 
         this.speed = speed;
+        this.column = column;
     }
 
 
@@ -20,5 +24,15 @@ public class NoteController : MonoBehaviour
         
         // Check for player input and scoring logic.
         // Implement note destruction when it reaches the hitline or goes off-screen.
+        if(transform.position.y <= -3.4f &&!resetCombo )
+        {
+            gameManager = GameManagerNew.instance;
+            gameManager.ResetCombo();
+            resetCombo = true;
+        }
+        if(transform.position.y <= -5.5f)
+        {
+            Destroy(this);
+        }
     }
 }

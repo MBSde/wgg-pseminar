@@ -1,29 +1,30 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
-public class ScoreDisplay : MonoBehaviour
+public class ScoreDisplayNew : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI comboText;
     public TextMeshProUGUI highscoreText;
-    private GameManager gameManager;
+    private GameManagerNew gameManager;
 
     void Awake()
     {
-        
+
     }
 
     void Start()
     {
         //scoreText = GetComponent<TextMeshProUGUI>();
-        gameManager = GameManager.Instance;
+        gameManager = GameManagerNew.instance;
         UpdateScoreDisplay();
     }
 
     void Update()
     {
-            UpdateScoreDisplay();
- 
+        UpdateScoreDisplay();
+
     }
 
     void UpdateScoreDisplay()

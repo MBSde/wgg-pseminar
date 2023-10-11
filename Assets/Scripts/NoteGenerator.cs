@@ -7,13 +7,13 @@ public class NoteGenerator : MonoBehaviour
 
     public GameObject notePrefab;
     public Transform[] columns;
-    public float noteSpeed = 2.0f;
+    public float noteSpeed = 4.0f;
     public float spawnDelay = 3.0f;
     public int ticksPerBeat = 1;
     public float beatsPerMinute = 120.0f;
     private float secondsPerBeat = 0.5f;
     private float spawnYPosition = 6.5f;
-    private float hitlineYPosition = -1.5f;
+    private float hitlineYPosition = -3.5f;
 
     // Other variables and methods...
 
@@ -43,7 +43,8 @@ public class NoteGenerator : MonoBehaviour
 
             // Instantiate a note and set its position.
             GameObject note = Instantiate(notePrefab);
-            Transform selectedColumn = columns[Random.Range(0, columns.Length)];
+            int columnNumber = Random.Range(0, columns.Length);
+            Transform selectedColumn = columns[columnNumber];
             float xPosition = selectedColumn.position.x;
 
             // Calculate the y position to arrive at the hitline on the beat.
@@ -53,7 +54,7 @@ public class NoteGenerator : MonoBehaviour
 
             // Set the note's behavior (NoteController) and destroy it when it's no longer needed.
             NoteController noteController = note.GetComponent<NoteController>();
-            noteController.Initialize(noteSpeed);
+            noteController.Initialize(noteSpeed, columnNumber);
             
         }
     }
