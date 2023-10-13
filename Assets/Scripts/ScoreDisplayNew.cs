@@ -7,6 +7,7 @@ public class ScoreDisplayNew : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI comboText;
     public TextMeshProUGUI highscoreText;
+    public TextMeshProUGUI accuracyText;
     private GameManagerNew gameManager;
 
     void Awake()
@@ -29,8 +30,9 @@ public class ScoreDisplayNew : MonoBehaviour
 
     void UpdateScoreDisplay()
     {
-        scoreText.text = "Score: " + gameManager.score.ToString();
+        scoreText.text = "Score: " + gameManager.roundedScore.ToString();
         comboText.text = "Combo: " + gameManager.combo.ToString();
-        highscoreText.text = "Highscoere: " + PlayerPrefs.GetInt("HighscoreRhythmGame");
+        accuracyText.text = "Accuracy:" + gameManager.roundedHitAccuracy.ToString() + "%";
+        highscoreText.text = "Highscore: " + PlayerPrefs.GetInt("HighscoreRhythmGame");
     }
 }

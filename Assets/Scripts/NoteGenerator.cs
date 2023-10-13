@@ -6,14 +6,15 @@ public class NoteGenerator : MonoBehaviour
 {
 
     public GameObject notePrefab;
+    private GameObject audioManager;
     public Transform[] columns;
     public float noteSpeed = 4.0f;
     public float spawnDelay = 3.0f;
     public int ticksPerBeat = 1;
     public float beatsPerMinute = 120.0f;
     private float secondsPerBeat = 0.5f;
-    private float spawnYPosition = 6.5f;
-    private float hitlineYPosition = -3.5f;
+    private float hitlineYPosition = -2.9f;
+
 
     // Other variables and methods...
 
@@ -24,19 +25,19 @@ public class NoteGenerator : MonoBehaviour
 
         // Start a coroutine to spawn notes.
         SpawnNotesAtStart();
-        
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager");
     }
 
     // Other methods...
     void SpawnNotesAtStart()
     {
-        float firstNoteHeight = (float)(noteSpeed * spawnDelay - 0.15);
+        float firstNoteHeight = (float)(noteSpeed * spawnDelay +0.2);
 
         // Calculate the time interval between note spawns.
         float spawnInterval = secondsPerBeat / ticksPerBeat;
  
         // Loop to spawn notes.
-        for (int i = 0; i < 100; i++) // Spawn 100 notes (adjust the number as needed).
+        for (int i = 0; i < 64; i++) // Spawn 100 notes (adjust the number as needed).
         {
             // Calculate the spawn time for this note.
             float height = firstNoteHeight + i * spawnInterval * noteSpeed;
@@ -59,4 +60,14 @@ public class NoteGenerator : MonoBehaviour
         }
     }
 
+    public void playBeatAtStart()
+    {
+        
+        float spawnInterval = secondsPerBeat / ticksPerBeat;
+        for(int i = 1; i < 4; i++)
+        {
+            audioManager.GetComponent<AudioManager>().playDrumstick(spawnDelay, spawnInterval);
+                
+        }
+    }
 }
