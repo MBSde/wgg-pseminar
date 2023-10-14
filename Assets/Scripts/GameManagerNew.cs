@@ -26,6 +26,8 @@ public class GameManagerNew : MonoBehaviour
     private bool isGameOver = false;
     private GameObject audioManager;
     public GameObject restartButton;
+    public GameObject startButton;
+    public GameObject tutorialPanel;
 
     void Awake()
     {
@@ -39,6 +41,10 @@ public class GameManagerNew : MonoBehaviour
             Destroy(gameObject);
         }
         highscore = PlayerPrefs.GetInt("HighscoreRhythmGame", 0);
+        if (PlayerPrefs.GetInt("RhythmGameTutorial", 0)==1)
+        {
+            tutorialFinished();
+        }
         audioManager = GameObject.FindGameObjectWithTag("AudioManager");
     }
 
@@ -179,5 +185,22 @@ public class GameManagerNew : MonoBehaviour
         pointsMultiplier = (400 / maxPoints);
         comboPointsMultiplier = (600 / maxComboScore);
         print(comboPointsMultiplier);
+    }
+
+    public void tutorialFinished()
+    {
+        tutorialPanel.SetActive(false);
+        startButton.SetActive(true);
+
+    }
+
+   public void skipTutorial()
+    {
+        int bVal = 0;
+        if (PlayerPrefs.GetInt("RhythmGameTutorial", bVal)==0)
+        {
+            bVal = 1;
+        }
+        PlayerPrefs.SetInt("RhythmGameTutorial", bVal);
     }
 }
