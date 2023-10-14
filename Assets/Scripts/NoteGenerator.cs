@@ -31,7 +31,7 @@ public class NoteGenerator : MonoBehaviour
     // Other methods...
     void SpawnNotesAtStart()
     {
-        float firstNoteHeight = (float)(noteSpeed * spawnDelay +0.2);
+        float firstNoteHeight = (float)(noteSpeed * spawnDelay +0.25);
 
         // Calculate the time interval between note spawns.
         float spawnInterval = secondsPerBeat / ticksPerBeat;

@@ -31,11 +31,12 @@ public class NoteController : MonoBehaviour
             {
                 gameManager = GameManagerNew.instance;
                 gameManager.ResetCombo();
+                gameManager.noteMissed();
                 resetCombo = true;
             }
             if (transform.position.y <= -5.5f)
             {
-                Destroy(this);
+                Object.Destroy(this.gameObject);
             }
         }
         
