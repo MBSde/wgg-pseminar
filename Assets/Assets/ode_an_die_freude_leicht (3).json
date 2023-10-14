@@ -1,0 +1,303 @@
+{
+  "BPM": 60,
+  "TicksPerBeat": 4,
+  "SoundFileName": "ode_an_die_freude_leicht",
+  "NoteSpeed": 4,
+  "SpawnDelay": 3,
+  "Notes": [
+    {
+      "Column": 2,
+      "Time": 0,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 3,
+      "Time": 8,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 0,
+      "Time": 16,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 1,
+      "Time": 20,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 2,
+      "Time": 22,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 2,
+      "Time": 24,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 1,
+      "Time": 27,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 1,
+      "Time": 28,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 2,
+      "Time": 32,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 3,
+      "Time": 40,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 0,
+      "Time": 48,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 1,
+      "Time": 52,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 2,
+      "Time": 54,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 1,
+      "Time": 56,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 0,
+      "Time": 59,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 0,
+      "Time": 60,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 1,
+      "Time": 64,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 1,
+      "Time": 66,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 2,
+      "Time": 68,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 0,
+      "Time": 70,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 1,
+      "Time": 72,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 2,
+      "Time": 74,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 3,
+      "Time": 75,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 2,
+      "Time": 76,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 0,
+      "Time": 78,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 1,
+      "Time": 80,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 2,
+      "Time": 82,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 3,
+      "Time": 83,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 2,
+      "Time": 84,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 1,
+      "Time": 86,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 0,
+      "Time": 88,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 1,
+      "Time": 90,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 0,
+      "Time": 92,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 1,
+      "Time": 94,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 1,
+      "Time": 96,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 2,
+      "Time": 98,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 3,
+      "Time": 100,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 3,
+      "Time": 102,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 2,
+      "Time": 104,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 2,
+      "Time": 106,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 1,
+      "Time": 108,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 0,
+      "Time": 110,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 0,
+      "Time": 112,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 1,
+      "Time": 114,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 2,
+      "Time": 116,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 2,
+      "Time": 118,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 1,
+      "Time": 120,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 0,
+      "Time": 123,
+      "TimeIsInTicks": true,
+      "Length": 0
+    },
+    {
+      "Column": 0,
+      "Time": 124,
+      "TimeIsInTicks": true,
+      "Length": 0
+    }
+  ]
+}

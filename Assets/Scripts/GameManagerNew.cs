@@ -11,7 +11,7 @@ public class GameManagerNew : MonoBehaviour
     public double score = 0;
     public int roundedScore = 0;
     public int combo = 0;
-    public int totalNotes = 64;
+    [SerializeField] private int totalNotes = 64;
     private double maxPoints = 0;
     private double maxComboScore = 0;
     private double pointsMultiplier = 0;
@@ -21,7 +21,7 @@ public class GameManagerNew : MonoBehaviour
     private float hitlineYPosition = -2.9f;
     private int notesMissed = 0;
     private int notesHit = 0;
-    [SerializeField] private int highscore;
+    private int highscore;
     public bool isGameStarted = false;
     private bool isGameOver = false;
     private GameObject audioManager;
@@ -39,12 +39,6 @@ public class GameManagerNew : MonoBehaviour
             Destroy(gameObject);
         }
         highscore = PlayerPrefs.GetInt("HighscoreRhythmGame", 0);
-        maxPoints = totalNotes * 5;
-        maxComboScore = 5*((double)(totalNotes + 1) * ((double)totalNotes / 2));
-        print(maxComboScore);
-        pointsMultiplier = (400 / maxPoints);
-        comboPointsMultiplier = (600 / maxComboScore);
-        print(comboPointsMultiplier);
         audioManager = GameObject.FindGameObjectWithTag("AudioManager");
     }
 
@@ -174,5 +168,16 @@ public class GameManagerNew : MonoBehaviour
     public void noteMissed()
     {
         notesMissed++;
+    }
+
+    public void setTotalNotes(int newTotal)
+    {
+        totalNotes = newTotal;
+        maxPoints = totalNotes * 5;
+        maxComboScore = 5 * ((double)(totalNotes + 1) * ((double)totalNotes / 2));
+        print(maxComboScore);
+        pointsMultiplier = (400 / maxPoints);
+        comboPointsMultiplier = (600 / maxComboScore);
+        print(comboPointsMultiplier);
     }
 }

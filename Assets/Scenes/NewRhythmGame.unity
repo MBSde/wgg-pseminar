@@ -769,10 +769,7 @@ MonoBehaviour:
   - {fileID: 1989379387}
   - {fileID: 1801975255}
   - {fileID: 245277353}
-  noteSpeed: 4
-  spawnDelay: 3
-  ticksPerBeat: 1
-  beatsPerMinute: 120
+  odeLeicht: {fileID: 4900000, guid: 82ced83ccfdda3f428c4695a4fa24188, type: 3}
 --- !u!4 &192679294
 Transform:
   m_ObjectHideFlags: 0
@@ -825,7 +822,6 @@ MonoBehaviour:
   totalNotes: 64
   hitAccuracy: 1
   roundedHitAccuracy: 1
-  highscore: 0
   isGameStarted: 0
   restartButton: {fileID: 1437120382}
 --- !u!4 &202303542
@@ -1080,7 +1076,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1900, y: 1080}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 2
   m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
