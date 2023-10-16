@@ -28,6 +28,7 @@ public class GameManagerNew : MonoBehaviour
     public GameObject restartButton;
     public GameObject startButton;
     public GameObject tutorialPanel;
+    public SplashText splashText;
 
     void Awake()
     {
@@ -120,6 +121,7 @@ public class GameManagerNew : MonoBehaviour
     {
         if (!isGameOver)
         {
+            splashText.ActivateText(added, 1);
             this.points += added;
             // Additional score-related logic or event handling can be implemented here
             increaseComboPoints(added);
@@ -174,6 +176,7 @@ public class GameManagerNew : MonoBehaviour
     public void noteMissed()
     {
         notesMissed++;
+        splashText.ActivateText(0, 1);
     }
 
     public void setTotalNotes(int newTotal)
