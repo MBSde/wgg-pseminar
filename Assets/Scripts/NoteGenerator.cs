@@ -26,6 +26,7 @@ public class NoteGenerator : MonoBehaviour
 {
 
     public GameObject notePrefab;
+    public GameObject longNotePrefab;
     private GameObject audioManager;
     private GameManagerNew gameManager;
     public Transform[] columns;
@@ -36,7 +37,7 @@ public class NoteGenerator : MonoBehaviour
     private float secondsPerBeat = 0.125f;
     private float hitlineYPosition = -2.9f;
     private string soundFileName;
-    public TextAsset odeLeicht;
+    public TextAsset selectedLevelData;
 
 
     // Other variables and methods...
@@ -44,9 +45,10 @@ public class NoteGenerator : MonoBehaviour
     void Start()
     {
         gameManager = GameManagerNew.instance;
+        selectedLevelData = gameManager.selectedLevel;
         // Calculate the time in seconds per beat based on BPM and ticks per beat.
         secondsPerBeat = 60.0f / (beatsPerMinute * ticksPerBeat);
-        SongData songData = JsonUtility.FromJson<SongData>(odeLeicht.text);
+        SongData songData = JsonUtility.FromJson<SongData>(selectedLevelData.text);
 
         // Output the song data to the console (for testing)
         beatsPerMinute = songData.BPM;
@@ -71,25 +73,52 @@ public class NoteGenerator : MonoBehaviour
 
         foreach (NoteData note in notes)
         {
-            GameObject noteObj = Instantiate(notePrefab);
-            Transform selectedColumn = columns[note.Column];
-            float height = 0;
-            if (note.TimeIsInTicks)
+            if (note.Length == 0)
             {
-                height = firstNoteHeight + note.Time  * noteSpeed * ticksPerSecond;
+                GameObject noteObj = Instantiate(notePrefab);
+                Transform selectedColumn = columns[note.Column];
+                float height = 0;
+                if (note.TimeIsInTicks)
+                {
+                    height = firstNoteHeight + note.Time * noteSpeed * ticksPerSecond;
+                }
+                else
+                {
+                    height = firstNoteHeight + note.Time * noteSpeed;
+                }
+
+                float xPosition = selectedColumn.position.x;
+                // Calculate the y position to arrive at the hitline on the beat.
+                float yPosition = hitlineYPosition + height;
+
+                noteObj.transform.position = new Vector3(xPosition, yPosition, 0);
+                NoteController noteController = noteObj.GetComponent<NoteController>();
+                noteController.Initialize(noteSpeed, note.Column);
             }
             else
             {
-                height = firstNoteHeight + note.Time * noteSpeed;
+                GameObject noteObj = Instantiate(longNotePrefab);
+                Transform selectedColumn = columns[note.Column];
+                float height = 0;
+                float length = 0;
+                if (note.TimeIsInTicks)
+                {
+                    height = firstNoteHeight + note.Time * noteSpeed * ticksPerSecond;
+                    length = note.Length * noteSpeed * ticksPerSecond;
+                }
+                else
+                {
+                    height = firstNoteHeight + note.Time * noteSpeed;
+                    length = note.Length * noteSpeed;
+                }
+
+                float xPosition = selectedColumn.position.x;
+                // Calculate the y position to arrive at the hitline on the beat.
+                float yPosition = hitlineYPosition + height;      
+                noteObj.transform.position = new Vector3(xPosition, yPosition, 0);
+                LongNoteController longnoteController = noteObj.GetComponent<LongNoteController>();
+                longnoteController.Initialize(noteSpeed, note.Column, length);
             }
-
-            float xPosition = selectedColumn.position.x;
-            // Calculate the y position to arrive at the hitline on the beat.
-            float yPosition = hitlineYPosition + height;
-
-            noteObj.transform.position = new Vector3(xPosition, yPosition, 0);
-            NoteController noteController = noteObj.GetComponent<NoteController>();
-            noteController.Initialize(noteSpeed, note.Column);
         }
     }
 

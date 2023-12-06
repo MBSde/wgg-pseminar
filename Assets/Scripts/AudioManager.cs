@@ -3,6 +3,9 @@ using System.Collections;
 public class AudioManager : MonoBehaviour
 {
     public AudioSource audioSourceMainSong;
+    public AudioClip song1;
+    public AudioClip song2;
+    public AudioClip song3;
     public AudioClip mainSong; // Reference to your main song audio clip
     public AudioSource audioSourceDrumstick;
     public AudioClip drumstickSound;
@@ -11,12 +14,27 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Function to play the main song
-    public void PlayMainSong()
+    public void PlayMainSong(int songNR)
     {
+        switch (songNR)
+        {
+            case 1:
+                mainSong = song1;
+                break;
+            case 2:
+                mainSong = song2;
+                break;
+            case 3:
+                mainSong = song3;
+                break;
+            default:
+                mainSong = song1;
+                break;
+        }
         if (audioSourceMainSong != null && mainSong != null)
         {
             audioSourceMainSong.clip = mainSong;

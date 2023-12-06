@@ -33,6 +33,6 @@ public class ScoreDisplayNew : MonoBehaviour
         scoreText.text = "Score: " + gameManager.roundedScore.ToString();
         comboText.text = "Combo: " + gameManager.combo.ToString();
         accuracyText.text = "Accuracy:" + gameManager.roundedHitAccuracy.ToString() + "%";
-        highscoreText.text = "Highscore: " + PlayerPrefs.GetInt("HighscoreRhythmGame");
+        highscoreText.text = "Highscore: " + PlayerPrefs.GetInt("HighscoreOdeLeicht");
     }
 }

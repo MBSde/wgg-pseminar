@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NewRhythmGame.unity
     guid: 105995d6a362e5745b3a86b3e275f342
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 0383378ba85fb3c48b1f636a27d7f942
   m_configObjects: {}

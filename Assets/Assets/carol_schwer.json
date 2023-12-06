@@ -1,0 +1,831 @@
+{
+    "BPM": 70,
+    "TicksPerBeat": 4,
+    "SoundFileName": "carol_schwer",
+    "NoteSpeed": 6,
+    "SpawnDelay": 3,
+    "Notes": [
+        {
+            "Column": 0,
+            "Time": 168,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 166,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 165,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 162,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 162,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 162,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 160,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 159,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 158,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 156,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 154,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 153,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 152,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 150,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 148,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 147,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 146,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 144,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 142,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 141,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 140,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 138,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 136,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 135,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 134,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 132,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 130,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 129,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 128,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 126,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 124,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 123,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 122,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 120,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 118,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 116,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 115,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 114,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 113,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 112,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 111,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 110,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 109,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 108,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 106,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 104,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 103,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 102,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 101,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 100,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 99,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 98,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 97,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 96,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 94,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 93,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 92,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 90,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 90,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 90,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 89,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 88,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 87,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 86,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 84,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 84,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 84,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 83,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 82,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 81,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 80,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 78,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 78,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 78,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 77,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 76,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 75,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 74,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 72,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 72,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 72,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 70,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 69,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 68,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 66,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 66,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 66,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 64,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 63,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 62,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 60,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 60,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 60,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 58,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 57,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 56,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 54,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 54,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 54,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 52,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 51,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 50,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 0,
+            "Time": 48,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 48,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 48,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 46,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 45,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 44,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 42,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 40,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 39,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 38,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 36,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 34,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 33,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 32,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 30,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 28,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 27,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 26,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 24,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 22,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 21,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 20,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 18,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 16,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 15,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 14,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 12,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 10,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 9,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 8,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 6,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 4,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 2,
+            "Time": 3,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 1,
+            "Time": 2,
+            "TimeIsInTicks": true,
+            "Length": 0
+        },
+        {
+            "Column": 3,
+            "Time": 0,
+            "TimeIsInTicks": true,
+            "Length": 0
+        }
+    ]
+}
